@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@300;500;700&display=swap');
+
+
+*{
+    font-family: 'Poppins';
+    
+    font-weight: bold;
+}
+
+
+/* SCROLLBAR */
+/* SCROLLBAR */
+body::-webkit-scrollbar{
+	width:12px;
+	
+}
+
+body::-webkit-scrollbar-thumb {
+	background:#ec7a2f;
+	border-radius:3em;
+}
+/* SCROLLBAR */
+/* SCROLLBAR */
+
+body{
+    margin: 0em 3em 3em 3em;
+    position: relative;
+
+    
+}
+
+
+.container{
+    margin-top: 5em;
+    
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    
+    
+     
+}
+
+
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 390px;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2em;
+    box-shadow:
+  1.5px 3.1px 4.9px -16px rgba(0, 0, 0, 0.44),
+  4.9px 10.3px 16.3px -16px rgba(0, 0, 0, 0.39),
+  22px 46px 73px -16px rgba(0, 0, 0, 0.319);
+
+    padding: 5em 0;
+
+  
+    
+}
+
+
+
+h1{
+    font-size: 1.7rem;
+}
+
+input, textarea{
+    margin:.5em 0;
+    padding: .3em;
+    width: 60%;
+    font-size: 1em;
+    border:none;
+    border-bottom: 2px solid grey;
+    transition: border-bottom .1s;
+    font-weight: 200;
+    resize: none;
+   
+    
+}
+
+
+
+
+
+
+#mensaje:focus{
+    outline: none;
+}
+
+#mensaje::-webkit-scrollbar{
+    width:12px;
+
+}
+
+#mensaje::-webkit-scrollbar-thumb {
+	background:#ec7a2f;
+	border-radius:3em;
+}
+
+
+input:focus{
+    outline: none;
+}
+
+input[type='text']:hover{
+    border-bottom: 3px solid rgb(71, 71, 71);
+
+}
+
+
+.enviar{
+    font-weight: 400;
+    width: 62%;
+    margin-top: 3em;
+    border:none;
+    padding: .5em;
+    transition: transform .1s;
+    border-radius: 3em;
+    
+    
+}
+
+
+
+.enviar:active{
+    transform: scale(.9);
+}
+
+
+.green{
+    color:green !important;
+}
+
+
+.div{
+    font-weight: 400;
+    
+    padding: 1em  3em 0em 3em;
+    color:red;
+}
+
+
+.imgsvg{
+    width: 40%;
+    margin: 1.5em 0em 3em 0em;
+   
+}
+
+.trash{
+    border-radius: .9em;
+    border:none;
+    padding: .8em;
+    transform: scale(.7);
+    
+   
+}
+
+
+.trash:active{
+    transform: scale(0.6);
+}
+
+
+
+
+@media only screen and (max-width: 650px)  {
+
+
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    body{
+        margin: 0em .5em 10em .5em;
+        
+    }
+   
+    
+    .nav ul li a{
+        
+        margin-left: 8px;
+    }
+}

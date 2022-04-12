@@ -1,0 +1,74 @@
+
+
+
+
+
+.hero-about{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap:100px;
+    margin: 3em 1em;
+    
+}
+
+
+img{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.hobbies{
+    margin:1em 0em;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.btn-about{
+    z-index: 100;
+    font-weight: 800;
+    
+    margin-right: .8em;
+    padding:  .8em 1.2em;
+    background:none;
+    border-radius: .5em;
+    border:2px solid black;
+    
+
+}
+
+
+@media only screen and (max-width: 1200px)  {
+    .hero-about{
+        flex-direction: column;
+        gap:20px;
+    }
+    .aside, h2{
+        text-align: center;
+
+    }
+    img{
+        height: 300px;
+        width: 300px;
+    }
+}
+
+
+@media only screen and (max-width: 1200px){
+    .btn-container{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .btn-about{
+        margin-top: 1em;
+        width: 90%;
+    }
+
+}
